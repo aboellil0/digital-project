@@ -1,0 +1,304 @@
+<!DOCTYPE html><html><head>
+      <title>mermaid</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\MOHAMED-ABOELLIL\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.19\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\MOHAMED-ABOELLIL\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.19\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<div class="mermaid">---
+config:
+  theme: default
+---
+graph TB
+    subgraph MainDFE["&lt;b&gt;🎯 COMPLETE DFE SYSTEM - DIGITAL FRONT END&lt;/b&gt;"]
+        direction TB
+        
+        subgraph SystemInput["&lt;b&gt;📥 SYSTEM INPUT&lt;/b&gt;"]
+            ADCInput["&lt;b&gt;ADC Output&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Sample Rate: 9 MHz&lt;br/&gt;Format: s1.15 (16-bit)&lt;br/&gt;Bit Width: 16 bits&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Nyquist: 4.5 MHz&lt;br/&gt;Signal Band: 0-2.8 MHz"]
+        end
+        
+        subgraph Stage1["&lt;b&gt;🔷 STAGE 1: FRACTIONAL DECIMATOR (2/3)&lt;/b&gt;"]
+            direction TB
+            
+            subgraph PolyInput["Input Specs"]
+                P1In["&lt;b&gt;Input Signal&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Fs_in: 9 MHz&lt;br/&gt;Format: s1.15&lt;br/&gt;Width: 16 bits"]
+            end
+            
+            subgraph PolyFilter["&lt;b&gt;Polyphase FIR Filter&lt;/b&gt;"]
+                direction TB
+                PolyDesc["&lt;b&gt;Rational Resampler&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;L (Upsample): 2&lt;br/&gt;M (Downsample): 3&lt;br/&gt;Effective Rate: 2/3&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Filter Type: Equiripple&lt;br/&gt;Prototype Fc: 1.5 MHz&lt;br/&gt;Effective Fc: 3 MHz&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Taps: 227 coeffs&lt;br/&gt;Format: Q1.15&lt;br/&gt;DC Gain: 2.0"]
+                
+                PolyStruct["&lt;b&gt;Structure Details&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;M=3 Main Phases&lt;br/&gt;L=2 Sub-phases&lt;br/&gt;Total: 6 branches&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;h[0,6,12,18...]&lt;br/&gt;h[1,7,13,19...]&lt;br/&gt;h[2,8,14,20...]&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;No zero insertion&lt;br/&gt;Efficient computation"]
+                
+                PolyPerf["&lt;b&gt;Performance&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Passband: 0-1.4 MHz&lt;br/&gt;Ripple: &lt; 0.25 dB&lt;br/&gt;Stopband: 1.6+ MHz&lt;br/&gt;Attenuation: 80 dB&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Group Delay: ~18 μs"]
+            end
+            
+            subgraph PolyOutput["Output Specs"]
+                P1Out["&lt;b&gt;Output Signal&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Fs_out: 6 MHz&lt;br/&gt;Format: s1.15&lt;br/&gt;Width: 16 bits&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Nyquist: 3 MHz&lt;br/&gt;Signal Band: 0-2.8 MHz&lt;br/&gt;Interference: 2.4 MHz"]
+            end
+            
+            P1In --&gt; PolyDesc
+            PolyDesc --&gt; PolyStruct
+            PolyStruct --&gt; PolyPerf
+            PolyPerf --&gt; P1Out
+        end
+        
+        subgraph Stage2["&lt;b&gt;🔶 STAGE 2: IIR NOTCH FILTER&lt;/b&gt;"]
+            direction TB
+            
+            subgraph NotchInput["Input Specs"]
+                N1In["&lt;b&gt;Input Signal&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Fs: 6 MHz&lt;br/&gt;Format: s1.15&lt;br/&gt;Width: 16 bits&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Interference at:&lt;br/&gt;2.4 MHz"]
+            end
+            
+            subgraph NotchFilter["&lt;b&gt;Biquad IIR Filter&lt;/b&gt;"]
+                direction TB
+                NotchDesc["&lt;b&gt;2nd Order Notch&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Center Freq: 2.4 MHz&lt;br/&gt;Quality Factor: Q=30&lt;br/&gt;Bandwidth: 100 kHz&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Structure: DF-II-T&lt;br/&gt;Coefficients: Q2.14&lt;br/&gt;Stages: 1 biquad"]
+                
+                NotchMath["&lt;b&gt;Transfer Function&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;H(z) = (1-2cos(ω₀)z⁻¹+z⁻²)&lt;br/&gt;      /(1-2rcos(ω₀)z⁻¹+r²z⁻²)&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;ω₀ = 2π(2.4M)/6M&lt;br/&gt;r = e^(-π·BW/fs)&lt;br/&gt;r ≈ 0.9598"]
+                
+                NotchCoeffs["&lt;b&gt;Coefficients (Q2.14)&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;b₀ = 15725 (0.9598)&lt;br/&gt;b₁ = 25443 (1.5529)&lt;br/&gt;b₂ = 15725 (0.9598)&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;a₁ = 25443 (1.5529)&lt;br/&gt;a₂ = 15066 (0.9196)"]
+                
+                NotchPerf["&lt;b&gt;Performance&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Notch Depth: -60 dB&lt;br/&gt;Notch Width: 80 kHz&lt;br/&gt;Passband: &lt; 0.5 dB&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Stable poles: ✓&lt;br/&gt;|poles| &lt; 1"]
+            end
+            
+            subgraph NotchStructure["&lt;b&gt;DF-II-T Structure&lt;/b&gt;"]
+                direction LR
+                NIn["x[n]"] --&gt; NB0["×b₀"]
+                NB0 --&gt; NSum["Σ"]
+                NSum --&gt; NOut["y[n]"]
+                
+                NIn --&gt; NS1["s₁"]
+                NS1 --&gt; NB1["×b₁"]
+                NB1 --&gt; NSum
+                NOut --&gt; NA1["×(-a₁)"]
+                NA1 --&gt; NS1
+                
+                NS1 --&gt; NS2["s₂"]
+                NS2 --&gt; NB2["×b₂"]
+                NB2 --&gt; NSum
+                NOut --&gt; NA2["×(-a₂)"]
+                NA2 --&gt; NS2
+            end
+            
+            subgraph NotchOutput["Output Specs"]
+                N1Out["&lt;b&gt;Output Signal&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Fs: 6 MHz&lt;br/&gt;Format: s1.15&lt;br/&gt;Width: 16 bits&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;2.4 MHz: -60 dB&lt;br/&gt;Passband: Clean"]
+            end
+            
+            N1In --&gt; NotchDesc
+            NotchDesc --&gt; NotchMath
+            NotchMath --&gt; NotchCoeffs
+            NotchCoeffs --&gt; NotchPerf
+            NotchPerf --&gt; NotchStructure
+            NotchStructure --&gt; N1Out
+        end
+        
+        subgraph Stage3["&lt;b&gt;🔷 STAGE 3: CIC DECIMATOR + COMPENSATION&lt;/b&gt;"]
+            direction TB
+            
+            subgraph CICInput["Input Specs"]
+                C1In["&lt;b&gt;Input Signal&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Fs: 6 MHz&lt;br/&gt;Format: s1.15&lt;br/&gt;Width: 16 bits"]
+            end
+            
+            subgraph CICBypass["&lt;b&gt;Bypass Logic (R=1)&lt;/b&gt;"]
+                BypassDesc["&lt;b&gt;Bypass Condition&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;IF R = 1:&lt;br/&gt;  Skip CIC entirely&lt;br/&gt;  Direct passthrough&lt;br/&gt;ELSE:&lt;br/&gt;  Process through CIC"]
+            end
+            
+            subgraph CICCore["&lt;b&gt;CIC Filter Core&lt;/b&gt;"]
+                direction TB
+                CICSpec["&lt;b&gt;CIC Parameters&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Stages: N = 5&lt;br/&gt;Diff Delay: M = 1&lt;br/&gt;Decimation: R ∈ {2,4,8,16}&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;DC Gain: (R×M)^N&lt;br/&gt;Bit Growth: ΔW bits"]
+                
+                subgraph Integrators["&lt;b&gt;∫ Integrator Section (6 MHz)&lt;/b&gt;"]
+                    direction LR
+                    Int1["∫₁"] --&gt; Int2["∫₂"] --&gt; Int3["∫₃"] --&gt; Int4["∫₄"] --&gt; Int5["∫₅"]
+                end
+                
+                subgraph Decimator["&lt;b&gt;⬇ Decimation by R&lt;/b&gt;"]
+                    DecDesc["Rate: 6 MHz → 6/R MHz"]
+                end
+                
+                subgraph Combs["&lt;b&gt;d/dz Comb Section (6/R MHz)&lt;/b&gt;"]
+                    direction LR
+                    Comb1["d/dz₁"] --&gt; Comb2["d/dz₂"] --&gt; Comb3["d/dz₃"] --&gt; Comb4["d/dz₄"] --&gt; Comb5["d/dz₅"]
+                end
+                
+                subgraph Scaling["&lt;b&gt;Bit Growth Handling&lt;/b&gt;"]
+                    ScaleDesc["&lt;b&gt;Truncation&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Input: 16 + ΔW bits&lt;br/&gt;ΔW = N×log₂(R×M)&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Shift Right: ΔW&lt;br/&gt;Round &amp; Saturate&lt;br/&gt;Output: 16 bits"]
+                end
+                
+                CICSpec --&gt; Integrators
+                Integrators --&gt; Decimator
+                Decimator --&gt; Combs
+                Combs --&gt; Scaling
+            end
+            
+            subgraph CompFIR["&lt;b&gt;Compensation FIR Filter&lt;/b&gt;"]
+                direction TB
+                CompDesc["&lt;b&gt;Droop Compensation&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Purpose: Flatten CIC&lt;br/&gt;Length: 40 taps&lt;br/&gt;Format: Q1.15&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Per R config:&lt;br/&gt;comp_R2.txt&lt;br/&gt;comp_R4.txt&lt;br/&gt;comp_R8.txt&lt;br/&gt;comp_R16.txt"]
+                
+                CompPerf["&lt;b&gt;Performance&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Passband: 0-0.45×Fs/2&lt;br/&gt;Ripple: &lt; 0.5 dB&lt;br/&gt;Stopband: &gt; 60 dB&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Inverse sinc shape"]
+            end
+            
+            subgraph CICOutput["Output Specs"]
+                C1Out["&lt;b&gt;Output Signal&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Fs: 6/R MHz&lt;br/&gt;Format: s1.15&lt;br/&gt;Width: 16 bits&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Examples:&lt;br/&gt;R=1: 6.00 MHz&lt;br/&gt;R=2: 3.00 MHz&lt;br/&gt;R=4: 1.50 MHz&lt;br/&gt;R=8: 0.75 MHz&lt;br/&gt;R=16: 0.375 MHz"]
+            end
+            
+            C1In --&gt; CICBypass
+            CICBypass --&gt; CICCore
+            CICCore --&gt; CompFIR
+            CompFIR --&gt; C1Out
+        end
+        
+        subgraph SystemOutput["&lt;b&gt;📤 SYSTEM OUTPUT&lt;/b&gt;"]
+            FinalOut["&lt;b&gt;DFE Output&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Sample Rate: 6/R MHz&lt;br/&gt;Format: s1.15 (16-bit)&lt;br/&gt;Bit Width: 16 bits&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Clean passband&lt;br/&gt;Attenuated stopband&lt;br/&gt;Removed interference&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Ready for DSP"]
+        end
+        
+        ADCInput ==&gt; P1In
+        P1Out ==&gt; N1In
+        N1Out ==&gt; C1In
+        C1Out ==&gt; FinalOut
+        
+        subgraph FreqResponse["&lt;b&gt;📊 FREQUENCY RESPONSE PER STAGE&lt;/b&gt;"]
+            direction TB
+            
+            FR1["&lt;b&gt;After Stage 1 (Polyphase)&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Fs: 9→6 MHz&lt;br/&gt;Passband: 0-1.4 MHz (&lt; 0.25 dB)&lt;br/&gt;Transition: 1.4-1.6 MHz&lt;br/&gt;Stopband: 1.6+ MHz (&gt; 80 dB)&lt;br/&gt;Effective: 0-2.8 MHz at 6 MHz"]
+            
+            FR2["&lt;b&gt;After Stage 2 (Notch)&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Fs: 6 MHz&lt;br/&gt;Passband: 0-3 MHz (&lt; 0.5 dB)&lt;br/&gt;Notch: 2.4 MHz (-60 dB)&lt;br/&gt;Width: 80 kHz&lt;br/&gt;All other: Pass"]
+            
+            FR3["&lt;b&gt;After Stage 3 (CIC+Comp)&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━&lt;br/&gt;Fs: 6/R MHz&lt;br/&gt;Passband: 0-0.45×Fs/2 (&lt; 0.5 dB)&lt;br/&gt;Stopband: &gt; 0.55×Fs/2 (&gt; 60 dB)&lt;br/&gt;Flat response with comp"]
+            
+            FR1 --&gt; FR2
+            FR2 --&gt; FR3
+        end
+        
+        subgraph ConfigTable["&lt;b&gt;⚙️ CONFIGURATION TABLE&lt;/b&gt;"]
+            direction TB
+            
+            CT["&lt;b&gt;R Value → Output Rate &amp; Performance&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br/&gt;R=1:  6.000 MHz | DC Gain=1      | ΔW=0  | Bypass&lt;br/&gt;R=2:  3.000 MHz | DC Gain=32     | ΔW=5  | Light decimation&lt;br/&gt;R=4:  1.500 MHz | DC Gain=1024   | ΔW=10 | Medium decimation&lt;br/&gt;R=8:  0.750 MHz | DC Gain=32768  | ΔW=15 | Heavy decimation&lt;br/&gt;R=16: 0.375 MHz | DC Gain=1048576| ΔW=20 | Max decimation"]
+        end
+        
+        subgraph PerformanceMetrics["&lt;b&gt;⚡ OVERALL SYSTEM PERFORMANCE&lt;/b&gt;"]
+            direction TB
+            
+            Perf1["&lt;b&gt;✓ Passband&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Ripple: &lt; 0.5 dB total&lt;br/&gt;Flatness: Excellent"]
+            
+            Perf2["&lt;b&gt;✓ Stopband&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Stage 1: &gt; 80 dB&lt;br/&gt;Stage 3: &gt; 60 dB"]
+            
+            Perf3["&lt;b&gt;✓ Notch Filter&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Depth: -60 dB&lt;br/&gt;Width: 80 kHz"]
+            
+            Perf4["&lt;b&gt;✓ Latency&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Stage 1: ~18 μs&lt;br/&gt;Stage 2: ~1 μs&lt;br/&gt;Stage 3: &lt; 40 μs&lt;br/&gt;Total: &lt; 60 μs"]
+            
+            Perf5["&lt;b&gt;✓ Bit Accuracy&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;All stages: 16-bit&lt;br/&gt;No overflow&lt;br/&gt;Stable operation"]
+            
+            Perf6["&lt;b&gt;✓ Resource Efficient&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━&lt;br/&gt;Polyphase: Minimal MACs&lt;br/&gt;CIC: No multipliers&lt;br/&gt;Notch: 1 biquad only"]
+        end
+        
+        subgraph MathFormulas["&lt;b&gt;📐 KEY MATHEMATICAL RELATIONS&lt;/b&gt;"]
+            direction TB
+            
+            M1["&lt;b&gt;Polyphase FIR:&lt;/b&gt;&lt;br/&gt;H(e^jω) = Σ h[n]e^(-jωn)&lt;br/&gt;Fc_effective = Fc_prototype × L"]
+            
+            M2["&lt;b&gt;Notch IIR:&lt;/b&gt;&lt;br/&gt;H(z) = (1-2cos(ω₀)z⁻¹+z⁻²)/(1-2rcos(ω₀)z⁻¹+r²z⁻²)&lt;br/&gt;ω₀ = 2πf₀/fs, r = e^(-πΔf/fs)"]
+            
+            M3["&lt;b&gt;CIC Filter:&lt;/b&gt;&lt;br/&gt;H(z) = [(1-z^(-RM))/(1-z⁻¹)]^N&lt;br/&gt;|H(f)| = |sin(πfRM)/sin(πf)|^N"]
+            
+            M4["&lt;b&gt;Bit Growth:&lt;/b&gt;&lt;br/&gt;ΔW = ⌈N × log₂(R×M)⌉&lt;br/&gt;Output_bits = Input_bits + ΔW → Truncate"]
+            
+            M1 --&gt; M2
+            M2 --&gt; M3
+            M3 --&gt; M4
+        end
+        
+        subgraph CoeffFiles["&lt;b&gt;📁 COEFFICIENT FILES (Quantized)&lt;/b&gt;"]
+            direction TB
+            
+            Files["&lt;b&gt;Filter Coefficients&lt;/b&gt;&lt;br/&gt;━━━━━━━━━━━━━━━━&lt;br/&gt;coeffs_fixed_q15.txt: 227 taps (Q1.15)&lt;br/&gt;notch_b_q14.txt: [15725, 25443, 15725] (Q2.14)&lt;br/&gt;notch_a_q14.txt: [16384, 25443, 15066] (Q2.14)&lt;br/&gt;comp_R2.txt: 40 taps (Q1.15)&lt;br/&gt;comp_R4.txt: 40 taps (Q1.15)&lt;br/&gt;comp_R8.txt: 40 taps (Q1.15)&lt;br/&gt;comp_R16.txt: 40 taps (Q1.15)"]
+        end
+    end
+    
+    style ADCInput fill:#4a90e2,stroke:#2e5c8a,stroke-width:4px,color:#fff
+    style FinalOut fill:#4a90e2,stroke:#2e5c8a,stroke-width:4px,color:#fff
+    
+    style Stage1 fill:#e8d5f2,stroke:#8e44ad,stroke-width:3px
+    style Stage2 fill:#fff3cd,stroke:#f57c00,stroke-width:3px
+    style Stage3 fill:#c8e6c9,stroke:#43a047,stroke-width:3px
+    
+    style PolyFilter fill:#f3e5f5,stroke:#8e44ad,stroke-width:2px
+    style NotchFilter fill:#fff9c4,stroke:#f57c00,stroke-width:2px
+    style CICCore fill:#e8f5e9,stroke:#43a047,stroke-width:2px
+    
+    style FreqResponse fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    style ConfigTable fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    style PerformanceMetrics fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style MathFormulas fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px
+    style CoeffFiles fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    
+    style Integrators fill:#c5e1a5
+    style Combs fill:#ffccbc
+    style CompFIR fill:#b3e5fc
+</div>
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>
