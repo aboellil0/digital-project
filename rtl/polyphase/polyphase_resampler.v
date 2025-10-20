@@ -177,13 +177,3 @@ module polyphase_resampler #(
     end
 
 endmodule
-ut_phase <= 0;
-                    end
-                end
-            endcase
-        end else begin
-            data_out_valid <= 1'b0;
-        end
-    end
-
-endmodule
